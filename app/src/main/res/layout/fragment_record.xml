@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PowderBlue"
+    android:orientation="vertical"
+    android:weightSum="4">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/RecordStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="32dp">
+
+        </TextView>
+
+        <Chronometer
+            android:id="@+id/RecordTime"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            >
+        </Chronometer>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/RecordBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_round"
+            android:scaleType="center"
+            android:src="@drawable/ic_launcher_round">
+        </ImageButton>
+    </LinearLayout>
+</LinearLayout>
